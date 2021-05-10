@@ -7,6 +7,18 @@ This application is built using Angular framework for a frontend that allows use
 - Date Created: 07 May 2021
 - Last Modification Date: 10 May 2020
 
+### Deployment
+
+---
+
+The Application is deployed on Heroku and the following is the URL to access it:
+
+```
+https://angular-redspace.herokuapp.com/
+```
+
+P.S. Initially it could take few seconds to load as Heroku puts the application to sleep after 30 minutes of inactivity.
+
 ### Prerequisites
 
 ---
@@ -81,17 +93,16 @@ npm install
 npm start or node server.js
 ```
 
-### Deployment
+### Features and Techniques used
 
 ---
 
-The Application is deployed on Heroku and the following is the URL to access it:
-
-```
-https://angular-redspace.herokuapp.com/
-```
-
-P.S. Initially it could take few seconds to load as Heroku puts the application to sleep after 30 minutes of inactivity.
+- Services and Dependency Injections
+- Common module for components/services used by multiple routes
+- RxJS & Async Pipes to load data
+- NgModules & Lazy Loading
+- Presentational and Smart Components
+- SCSS
 
 ### Built With
 

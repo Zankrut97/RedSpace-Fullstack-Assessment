@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Demo-App": {
+    "Starwars-App": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Demo-App:build"
+            "browserTarget": "Starwars-App:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Demo-App:build:production"
+              "browserTarget": "Starwars-App:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Demo-App:build"
+            "browserTarget": "Starwars-App:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Demo-App:serve"
+            "devServerTarget": "Starwars-App:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Demo-App:serve:production"
+              "devServerTarget": "Starwars-App:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Demo-App"
+  "defaultProject": "Starwars-App"
 }
