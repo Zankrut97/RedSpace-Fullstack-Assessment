@@ -1,0 +1,59 @@
+.card {
+  box-sizing: border-box;
+  padding: 2em;
+  border-radius: 25px;
+  color: white;
+  line-height: 25px;
+  box-shadow: 5px 5px 10px #ccc;
+  float: left;
+  margin-right: 1em;
+}
+
+label {
+  font-family: "Pacifica", cursive;
+  font-size: large;
+}
+
+li {
+  font-family: "Pacifica", cursive;
+  font-size: large;
+}
+
+.section-heading {
+  margin-top: 10px;
+  font-size: medium;
+  font-family: "Pacifica", cursive;
+  background-color: #d3d3d3;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.general-detail-card {
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(150deg, #f731db, #4600f1 100%);
+}
+
+.main-heading {
+  font-size: x-larger;
+  font-family: "Pacifica", cursive;
+}
+
+.homeworld-detail-card {
+  width: 100%;
+  margin: auto;
+  background: linear-gradient(150deg, #184e68, #57ca85 100%);
+}
+
+.films-card {
+  background: linear-gradient(150deg, #5b247a, #1bcedf 100%);
+}
+
+.species-card {
+  margin: auto;
+  background: linear-gradient(150deg, #fad961, #f76b1c 100%);
+}
+
+.message {
+  font-family: "Pacifica", cursive;
+}

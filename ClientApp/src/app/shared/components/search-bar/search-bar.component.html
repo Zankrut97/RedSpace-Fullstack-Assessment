@@ -1,0 +1,14 @@
+<form class="form-inline my-2 my-lg-0">
+  <div *ngIf="!isInputBounded">
+    <input class="form-control bar" [(ngModel)]="inputSelected" name="inputSelected"
+       type="search" placeholder="Search" aria-label="Search">
+  </div>
+
+  <div *ngIf="isInputBounded">
+    <div class="form-group">
+      <select class="form-control bar" [(ngModel)]="inputSelected"  name="inputSelected" >
+        <option *ngFor="let person of inputList" [value]="person.id">{{person.name}}</option>
+      </select>
+    </div>
+  </div>
+</form>

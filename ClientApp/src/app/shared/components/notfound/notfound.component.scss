@@ -1,0 +1,31 @@
+.container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.custom-button {
+  display: inline-block;
+  background: #ff7f40;
+  color: White;
+  padding: 0.8rem 1.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #37b1ff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.body-text {
+  font-family: "Press Start 2P", cursive;
+  font-size: x-large;
+  margin-top: 15px;
+}

@@ -1,0 +1,43 @@
+<div class="fluid-container">
+  <div class="content">
+    <div class="search-container col-sm-12">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{searchType}}
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" (click)="searchByType('Name')">Search By Name</a>
+              <a class="dropdown-item" (click)="searchByType('Id')">Search By ID</a>
+            </div>
+        </div>
+        <app-search-bar class="search-bar"></app-search-bar> 
+        <button class="btn btn-success my-2 my-sm-0" (click)="search()">Search</button>
+    </div>
+
+    <div *ngIf="loading" class="spinner-position">
+      <img class="loading" src="/assets/light-saber.svg" width="80" height="80"/>
+      <p class="spinner-message">Fetching...</p>
+    </div>
+
+    <div *ngIf="!loading">
+      <div *ngIf="error">
+        <div class="spinner-position" *ngIf="error">
+          <img src="/assets/404.png" width="280"/>
+          <p class="spinner-message">Enter Valid Id</p>
+        </div>
+      </div>
+
+      <div *ngIf="!error">
+        <div *ngIf="personData">
+          <app-datagrid [personData]="personData"></app-datagrid>
+        </div>
+
+        <div class="spinner-position" *ngIf="!personData">
+          <img src="/assets/search-img.svg" width="280"/>
+          <p class="spinner-message">Search StarWars Characters</p>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
